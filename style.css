@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: lightsteelblue;
+}
+
+.container{
+    background-color: lightgreen;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    margin-top: 50px;
+    text-align: center;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+}
+form{
+    display: flex;
+    justify-content: center;/* To center them horizontally*/
+    align-items: center;/* to center items vertically*/
+    margin-bottom:30px;
+}
+form input[type="text"]{
+    padding: 10px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 50%;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius:20px;
+}
+form input[type="submit"]{
+    background-color: rgb(2, 178, 248);
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor:pointer;
+    outline: none;
+    transition: background-color .3s ease;
+}
+form input[type="submit"]:hover{
+    background-color: #007bff;
+}
+
+.icon img{
+    width: 100px;
+    height: 100px;
+    background-size: contain; /*If the image has no intrinsic proportions, then it's rendered at the size of the background positioning area.*/
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temperature{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 18px 0px;
+}
+
+.description{
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/* They will move top of each other if no space is there, which make the page responsive.*/
+}
+.details > div{
+    padding: 20px;
+    background-color: rgb(5, 199, 199);
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 25px;
+}
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+
+    form input[type="text"] {
+        width: 65%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    form input[type="submit"] {
+        border-radius: 16px;
+        width:40%;
+    }
+}
+
