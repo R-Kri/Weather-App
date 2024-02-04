@@ -1,11 +1,11 @@
 body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif, sans-serif;
-    background-color: lightsteelblue;
+    background-color:#FFF6E9;
 }
 
 .container{
-    background-color: lightgreen;
+    background-color: #BBE2EC;
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     margin-top: 50px;
@@ -31,7 +31,7 @@ form input[type="text"]{
     border-bottom-left-radius:20px;
 }
 form input[type="submit"]{
-    background-color: rgb(2, 178, 248);
+    background-color: #40A2E3;
     border: none;
     font-size: 16px;
     padding: 10px 20px;
